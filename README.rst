@@ -1,4 +1,4 @@
-Cocos2dxGenerators
+Cocos2dx Generators
 ====================
 
 TODO: Write a gem description

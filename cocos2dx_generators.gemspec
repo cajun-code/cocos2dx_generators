@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cocos2dx_generators/version'
+require 'cocos2dx/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cocos2dx_generators"
-  spec.version       = Cocos2dxGenerators::VERSION
+  spec.version       = Cocos2dx::VERSION
   spec.authors       = ["Allan Davis"]
   spec.email         = ["cajun.code@gmail.com"]
   spec.description   = %q{Generators for Cocos2d-x}
