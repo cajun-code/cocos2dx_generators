@@ -8,8 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Cocos2dxGenerators::VERSION
   spec.authors       = ["Allan Davis"]
   spec.email         = ["cajun.code@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Generators for Cocos2d-x}
+  spec.summary       = %q{Cocos2d-x is a C++ game framework.  
+    This will provide Rails like generators for creating projects or adding additional platforms}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +21,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_dependency "thor", "~> 0.18.1"
 end
