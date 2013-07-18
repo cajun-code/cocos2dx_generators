@@ -1,23 +1,15 @@
-require "thor"
-
+require 'thor'
 module Cocos2dx
-  class Project < Thor 
-    
-    include Thor::Actions
-    
-    def self.source_root
-      File.dirname(__FILE__)
-    end
-    
-    private 
-    
-    def set_name(name)
-      @name = name
-    end
+  module Project
+    private
     
     def create_base_project
-      puts @name
+      directory("templates/Classes", "#{app_name}/Classes")
+      directory("templates/Resources", "#{app_name}/Resources")
+      create_file "#{app_name}/.cocos2dx" do
+        "{app_name: '#{app_name}'}\n"
+      end
+      
     end
-    
   end
 end
